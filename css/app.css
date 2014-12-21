@@ -130,6 +130,7 @@ a {
 }
 
 .site-badge {
+  cursor: pointer;
   position: fixed;
   right: 1.5em;
   width: 1.2em;
