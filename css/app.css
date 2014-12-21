@@ -92,6 +92,22 @@ img {
   max-width: 100%;
 }
 
+footer {
+  background-color: #58d5ee;
+  margin: 0;
+  padding: 1em 0;
+  color: #eee;
+}
+
+footer a, a:visited {
+  color: #666;
+}
+
+footer a:hover {
+  color: #444;
+}
+
+
 a {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
@@ -121,11 +137,11 @@ a {
 
 
 .scroll-down {
-  cursor: pointer;
   font-size: 2em;
   color: #eee;
 }
 .scroll-down i {
+  cursor: pointer;
   position: absolute;
   bottom: 1em;
 }
@@ -172,7 +188,7 @@ a {
 }
 
 .sharp {
-  background-color: #7C3A2A;
+  background-color: #4a3b7c;
   position: relative;
   left: -5em;
   top: -5em;
@@ -195,7 +211,56 @@ a {
 }
 
 
+.contact-us ul li {
+  display: inline-block;
+  width: 30%;
+}
+.contact-us ul li a {
+  color: #444;
+}
+
+.contact-us i {
+  font-size: 1.5em;
+}
+
+
 @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 960px) {
+  .braced {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+  }
+
+  .braced:before, .braced:after {
+    top: 0.5em;
+    position: absolute;
+    width: 40%;
+    border-bottom: 1px solid #eee;
+    content: "";
+  }
+  .braced:before {
+    left: 0;
+  }
+
+  .braced:after {
+    content: "";
+    right: 0;
+  }
+  .contact-us, .reference {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    padding: 1em;
+  }
+
+  .contact-us {
+    width: 60%;
+  }
+
 }
 
 
