@@ -211,6 +211,19 @@ a {
   .verse {
     padding: 8em 0 8em 25em;
   }
+
+
+  .first-screen {
+    height: 46em;
+  }
+
+  .sharp {
+    height: 45em;
+  }
+
+  .what-we-do {
+    padding-top: 5em;
+  }
 }
 
 
@@ -218,5 +231,17 @@ a {
 
   .verse {
     padding: 5em 10em;
+  }
+
+  .first-screen {
+    height: 41em;
+  }
+
+  .sharp {
+    height: 40em;
+  }
+
+  .what-we-do {
+    padding-top: 3em;
   }
 }
