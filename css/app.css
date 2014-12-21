@@ -175,9 +175,9 @@ a {
   position: relative;
   left: -5em;
   top: -5em;
-  right: -1em;
+  right: -5em;
   height: 50em;
-  width: 120%;
+  width: 200%;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
@@ -209,7 +209,7 @@ a {
 
 @media screen and (min-width: 640px) and (max-width: 959px){
   .verse {
-    padding: 10em 0 10em 25em;
+    padding: 8em 0 8em 25em;
   }
 }
 
@@ -217,6 +217,6 @@ a {
 @media screen and (max-width: 639px) {
 
   .verse {
-    padding: 10em 10em;
+    padding: 5em 10em;
   }
 }
