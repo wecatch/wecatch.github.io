@@ -132,6 +132,7 @@ a {
 .site-badge {
   position: fixed;
   right: 1.5em;
+  width: 1.2em;
   bottom: 1em;
 }
 
