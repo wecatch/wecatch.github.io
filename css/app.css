@@ -108,7 +108,7 @@ a {
   font-family: Monaco,'Courier New','Courier',monospace !important;
   letter-spacing: 0;
   line-height: 2em;
-  padding: 10em 0 10em 40em;
+  padding: 10em 0 10em 38em;
   clear: both;
   min-height: 20em;
 }
@@ -121,6 +121,7 @@ a {
 
 
 .scroll-down {
+  cursor: pointer;
   font-size: 2em;
   color: #eee;
 }
@@ -230,7 +231,7 @@ a {
 @media screen and (max-width: 639px) {
 
   .verse {
-    padding: 5em 10em;
+    padding: 5em 8em;
   }
 
   .first-screen {
