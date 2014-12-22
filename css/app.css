@@ -221,9 +221,6 @@ a {
   color: #444;
 }
 
-.contact-us i {
-  font-size: 1.5em;
-}
 
 
 @media screen and (min-width: 1200px) {
@@ -261,6 +258,10 @@ a {
 
   .contact-us {
     width: 60%;
+  }
+
+  .contact-us i {
+    font-size: 4em;
   }
 
 }
@@ -311,5 +312,9 @@ a {
 
   .what-we-do {
     padding-top: 3em;
+  }
+
+  .contact-us i {
+    font-size: 1em;
   }
 }
