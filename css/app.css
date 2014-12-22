@@ -317,4 +317,9 @@ a {
   .contact-us i {
     font-size: 1em;
   }
+
+	.contact-us ul li {
+  	display: list-item;
+  	width: 100%;
+	}
 }
