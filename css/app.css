@@ -321,5 +321,6 @@ a {
 	.contact-us ul li {
   	display: list-item;
   	width: 100%;
+		padding:0.5em 0;
 	}
 }
