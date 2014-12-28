@@ -445,7 +445,7 @@ footer a:hover {
 
   .main {
     padding-top: 5em;
-    height: 30em;
+    height: 40em;
   }
 
   .member-cell img {
@@ -478,4 +478,8 @@ footer a:hover {
   	width: 100%;
 		padding:0.5em 0;
 	}
+
+  footer .socals {
+    display: none;
+  }
 }
