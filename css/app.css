@@ -46,7 +46,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 ol,ul {
@@ -90,53 +90,31 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 }
 
 
-a {
-  color: #606CC3;
+a, a:visited, a:focus, a:active {
+  color: #222;
   text-decoration: none;
 }
 
-a:visited {
-  color: #606CC3;
-}
-
-a:focus {
-  color: #606CC3;
-}
-
 a:hover {
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-  color: #222;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #139ae0;
 }
 
-a:active {
-  color: #1655a8
-}
-
-a {
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s
-}
 img {
   max-width: 100%;
 }
 
 img.avatar {
-  height: 8em;
-  width: 8em;
+  height: 4em;
+  width: 4em;
   border-radius: 50%;
-  border: 2px solid #eee;
-}
-
-img.avatar:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  box-shadow: 0 0 0.8em rgba(0,0,0,0.3);
 }
+
 
 .gray-font {
   color: #777;
@@ -146,7 +124,7 @@ img.avatar:hover {
 footer {
   background-color: #444;
   color: #fff;
-  padding: 1em 0;
+  padding: 0.5em 0;
   font-weight: lighter;
 }
 
@@ -206,20 +184,20 @@ footer a:hover {
 }
 
 @keyframes arrowBlink {
-  0% { color: #999 }
-  50% { color: #eee; box-shadow: 0 0 1px rgba(0,0,0,0.1)}
-  100% { color: #999  }
+  0% { opacity: 0.5 }
+  50% { opacity: 1; box-shadow: 0 0 1px rgba(0,0,0,0.1)}
+  100% { opacity: 0.5  }
 }
 
 @-webkit-keyframes arrowBlink {
-  0% { color: #999 }
-  50% { color: #eee}
-  100% { color: #999  }
+  0% { opacity: 0.5 }
+  50% { opacity: 1}
+  100% { opacity: 0.5  }
 }
 
 .blink {
-  -webkit-animation: arrowBlink 4s infinite linear;
-  animation: arrowBlink 4s infinite linear;
+  -webkit-animation: arrowBlink 2s infinite linear;
+  animation: arrowBlink 2s infinite linear;
 }
 
 .field {
@@ -231,7 +209,7 @@ footer a:hover {
 }
 
 .block-padding {
-  padding: 2em;
+  padding: 1%;
 }
 
 .sharp {
@@ -248,19 +226,9 @@ footer a:hover {
   transform: rotate(-2deg);
 }
 
-.what-we-do {
-  padding-top: 8em;
-}
-
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-}
-
-
-.contact-us ul li {
-  display: inline-block;
-  width: 30%;
 }
 
 .main {
@@ -281,8 +249,8 @@ footer a:hover {
 .main .scroll-arrow {
   bottom: 0.5em;
   position: absolute;
-  left: 48%;
-  font-size: 4em;
+  left: 50%;
+  margin-left: -3em;
 }
 
 .nav-bar {
@@ -310,8 +278,11 @@ footer a:hover {
 }
 
 .project-cell {
-  margin: 1em;
+  margin: 2% 0.5%;
   float: left;
+  background: #f7f7f7;
+  padding: 2%;
+  color: #777;
 }
 
 .project-cell h3 {
@@ -322,9 +293,9 @@ footer a:hover {
   margin-top: 0.5em;
 }
 
-#team_member {
-  padding-top: 1em;
-  background-color: #f5f5f5;
+
+article.wrapper {
+  padding: 2% 0;
 }
 
 .member-cell {
@@ -335,6 +306,19 @@ footer a:hover {
   position: relative;
 }
 
+.member-cell .figure img {
+  float: left;
+  margin-right: 10%;
+}
+
+.member-cell .name {
+  padding-top: 10%;
+}
+
+.member-cell p {
+  font-size: 0.8em;
+}
+
 .special-cell {
   margin: 1em 0;
 }
@@ -343,28 +327,57 @@ footer a:hover {
   color: #ccc;
 }
 
+.special-icon {
+  display: block;
+  margin: 0 auto 3em;
+}
+
 .member-cell {
-  width: 33%;
+  width: 33.3%;
   display: inline-block;
   float: left;
   margin-bottom: 3em;
+}
+
+.contact-wrapper ul li {
+  display: inline-block;
+  width: 33.3%;
+  float: left;
+}
+
+.contact-wrapper a {
+  color: #666;
 }
 
 @media screen and (min-width: 1200px) {
 }
 
 @media screen and (min-width: 960px) {
+  
+  .container {
+    width: 80%;
+  }
+
   .project-cell {
-    width: 45%;
+    width: 44%;
     display: inline-block;
   }
 
 
   .special-cell {
-    width: 30%;
+    width: 31.3%;
     display: inline-block;
     float: left;
     margin: 2% 1%;
+  }
+
+  .special-cell h4 {
+    text-align: center;
+  }
+
+  .special-icon {
+    width: 10em;
+    height: 10em;
   }
 
   .braced {
@@ -389,19 +402,27 @@ footer a:hover {
     content: "";
     right: 0;
   }
-  .contact-us, .reference {
-    width: 20%;
-    display: inline-block;
+
+  .member-wrapper, .contact-wrapper {
+    margin-top: 5%;
     float: left;
-    padding: 1em;
+    display: inline-block;
   }
 
-  .contact-us {
+  .member-wrapper {
     width: 70%;
   }
 
-  .contact-us i {
-    font-size: 4em;
+  .contact-wrapper {
+    width: 30%;
+  }
+
+  .contact-wrapper ul {
+    padding-top: 1em;
+  }
+
+  .contact-wrapper ul li {
+    font-size: 3em;
   }
 
 }
@@ -416,10 +437,25 @@ footer a:hover {
 
 @media screen and (min-width: 640px) and (max-width: 959px){
 
+  .project-cell {
+    float: none;
+  }
+
   .special-cell {
     display: inline-block;
     width: 45%;
+    float: left;
+    height: 20em;
     margin: 1em 0.3em;
+  }
+
+  .special-cell h4 {
+    text-align: center;
+  }
+
+  .special-icon {
+    width: 8em;
+    height: 8em;
   }
 
   .verse {
@@ -435,8 +471,8 @@ footer a:hover {
     height: 45em;
   }
 
-  .what-we-do {
-    padding-top: 5em;
+  .contact-wrapper ul li {
+    font-size: 3em;
   }
 }
 
@@ -446,6 +482,22 @@ footer a:hover {
   .main {
     padding-top: 5em;
     height: 40em;
+  }
+
+  .special-cell {
+    clear: both;
+    padding: 5% 0;
+  }
+
+  .special-cell+.special-cell {
+    border-top: 1px dashed #eee;
+  }
+
+  .special-icon {
+    width: 5em;
+    height: 5em;
+    float: left;
+    margin-right: 2%;
   }
 
   .member-cell img {
@@ -465,21 +517,27 @@ footer a:hover {
     height: 40em;
   }
 
-  .what-we-do {
-    padding-top: 3em;
+  .member-cell {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
   }
 
-  .contact-us i {
-    font-size: 1em;
+  .member-cell+.member-cell{
+    border-top: 1px dashed #eee;
   }
 
-	.contact-us ul li {
-  	display: list-item;
-  	width: 100%;
-		padding:0.5em 0;
-	}
-
-  footer .socials {
-    display: none;
+  .member-cell .name {
+    padding-top: 0;
   }
+
+  .member-cell img {
+    width: 3em;
+    height: 3em;
+  }
+  
+  .contact-wrapper ul li {
+    font-size: 2em;
+  }
+
 }
