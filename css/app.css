@@ -282,7 +282,7 @@ footer a:hover {
 }
 
 .project-cell .icon img {
-  width: 8em;
+  width: 10em;
   margin-top: 3%;
 }
 
@@ -451,7 +451,7 @@ article.wrapper {
   }
 
   .project-cell .icon img {
-    width: 6em;
+    width: 8em;
     margin-top: 10%;
   }
 
@@ -508,7 +508,7 @@ article.wrapper {
   }
 
   .project-cell .icon img {
-    width: 5em;
+    width: 6em;
     margin-top: 30%;
   }
 
