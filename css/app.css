@@ -279,8 +279,7 @@ footer a:hover {
 
 .project-cell {
   margin: 2% 0.5%;
-  float: left;
-  background: #f7f7f7;
+  /*background: #f7f7f7;*/
   padding: 2%;
   color: #777;
 }
@@ -291,6 +290,13 @@ footer a:hover {
 }
 .project-cell li {
   margin-top: 0.5em;
+}
+
+.project-cell .badge {
+  width: 10em;
+  margin: auto;
+  display: block;
+  margin-top: 4em;
 }
 
 
@@ -359,6 +365,7 @@ article.wrapper {
   }
 
   .project-cell {
+    float: left;
     width: 44%;
     display: inline-block;
   }
@@ -441,6 +448,10 @@ article.wrapper {
     float: none;
   }
 
+  .project-cell .badge{
+    width: 8em;
+  }
+
   .special-cell {
     display: inline-block;
     width: 45%;
@@ -498,6 +509,10 @@ article.wrapper {
     height: 5em;
     float: left;
     margin-right: 2%;
+  }
+
+  .project-cell .badge{
+    width: 5em;
   }
 
   .member-cell img {
