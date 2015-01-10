@@ -117,7 +117,7 @@ img.avatar {
 
 
 .gray-font {
-  color: #777;
+  color: #555;
 }
 
 
@@ -277,26 +277,13 @@ footer a:hover {
   color: #222;
 }
 
-.project-cell {
-  margin: 2% 0.5%;
-  /*background: #f7f7f7;*/
-  padding: 2%;
-  color: #777;
-}
-
-.project-cell h3 {
-  text-align: center;
-  margin-bottom: 1em;
-}
 .project-cell li {
   margin-top: 0.5em;
 }
 
-.project-cell .badge {
-  width: 10em;
-  margin: auto;
-  display: block;
-  margin-top: 4em;
+.project-cell .icon img {
+  width: 8em;
+  margin-top: 3%;
 }
 
 
@@ -364,22 +351,17 @@ article.wrapper {
     width: 80%;
   }
 
-  .project-cell {
-    float: left;
-    width: 44%;
-    display: inline-block;
-  }
-
-
   .special-cell {
     width: 31.3%;
     display: inline-block;
     float: left;
     margin: 2% 1%;
   }
-
-  .special-cell h4 {
-    text-align: center;
+  
+  .project-cell .icon, .project-cell .brief {
+    float: left;
+    width: 46%;
+    padding: 2%;
   }
 
   .special-icon {
@@ -444,12 +426,9 @@ article.wrapper {
 
 @media screen and (min-width: 640px) and (max-width: 959px){
 
-  .project-cell {
-    float: none;
-  }
-
-  .project-cell .badge{
-    width: 8em;
+  .main {
+    padding-top: 10em;
+    height: 30em;
   }
 
   .special-cell {
@@ -460,8 +439,20 @@ article.wrapper {
     margin: 1em 0.3em;
   }
 
-  .special-cell h4 {
-    text-align: center;
+
+  .project-cell .icon {
+    width: 40%;
+  }
+  
+  .project-cell .icon, .project-cell .brief {
+    float: left;
+    width: 46%;
+    padding: 1%;
+  }
+
+  .project-cell .icon img {
+    width: 6em;
+    margin-top: 10%;
   }
 
   .special-icon {
@@ -492,13 +483,35 @@ article.wrapper {
 
   .main {
     padding-top: 5em;
-    height: 40em;
+    height: 30em;
+  }
+
+  .main .title {
+    font-size: 2em;
   }
 
   .special-cell {
+    text-align: left;
     clear: both;
     padding: 5% 0;
   }
+
+  .project-cell .icon, .project-cell .brief {
+    padding: 1%;
+    float: none;
+  }
+
+  .project-cell .icon {
+    width: 20%;
+    margin-right: 5%;
+    float: right;
+  }
+
+  .project-cell .icon img {
+    width: 5em;
+    margin-top: 30%;
+  }
+
 
   .special-cell+.special-cell {
     border-top: 1px dashed #eee;
@@ -511,9 +524,6 @@ article.wrapper {
     margin-right: 2%;
   }
 
-  .project-cell .badge{
-    width: 5em;
-  }
 
   .member-cell img {
     width: 5em;
