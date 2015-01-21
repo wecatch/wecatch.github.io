@@ -139,14 +139,9 @@ footer ul li {
   text-align: center;
 }
 
-.left {
-  float: left;
+.site-icon {
+  width: 1.5em;
 }
-
-.right {
-  float: right;
-}
-
 
 .verse {
   font-family: Monaco,'Courier New','Courier',monospace !important;
@@ -356,10 +351,10 @@ article.wrapper {
     padding: 2%;
   }
 
-  .special-icon {
+/*  .special-icon {
     width: 13em;
     height: 13em;
-  }
+  }*/
 
   .braced {
     position: relative;
@@ -447,10 +442,10 @@ article.wrapper {
     margin-top: 10%;
   }
 
-  .special-icon {
+ /* .special-icon {
     width: 10em;
     height: 10em;
-  }
+  }*/
 
   .verse {
     padding-top: 8em;
