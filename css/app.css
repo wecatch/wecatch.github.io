@@ -270,7 +270,7 @@ footer ul li {
 }
 
 .project-cell .icon img {
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 
@@ -288,11 +288,11 @@ article.wrapper {
 
 .member-cell .figure img {
   float: left;
-  margin-right: 10%;
+  margin-right: 8%;
 }
 
 .member-cell .name {
-  padding-top: 10%;
+  padding-top: 8%;
 }
 
 .member-cell p {
