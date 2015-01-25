@@ -110,11 +110,7 @@ img.avatar {
   height: 4em;
   width: 4em;
   border-radius: 50%;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
 }
-
 
 .gray-font {
   color: #555;
