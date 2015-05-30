@@ -1,0 +1,31 @@
+{
+  "name": "wecatch.me",
+  "version": "0.0.2",
+  "homepage": "https://github.com/wecatch/wecatch.github.io/",
+  "description": "wecatch website",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wecatch/wecatch.github.io/"
+  },
+  "lib": {
+    "jquery": "http://jquery.com",
+    "swipejs": "http://swipejs.com/",
+    "gruntjs": "http://gruntjs.com/"
+  },
+  "keywords": [
+    "wecatch",
+    "web"
+  ],
+  "author": "wecatch",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
