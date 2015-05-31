@@ -299,7 +299,6 @@ img {
   text-align: center;
 }
 #stuff .products .quote-card {
-  border-radius: .3em;
   margin: 4em auto 5em;
   font-style: italic;
   position: relative;
@@ -456,6 +455,7 @@ img {
   }
   #stuff .products li .quote-card {
     width: 50%;
+    border-radius: .3em;
   }
 }
 @media screen and (min-width: 960px) and (max-width: 1199px) {
@@ -504,9 +504,6 @@ img {
   }
   #stuff .product-card .content .text a {
     color: #fff;
-  }
-  #stuff .quote-card {
-    width: 80%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
@@ -580,9 +577,6 @@ img {
   #stuff .product-card .content .text a {
     color: #fff;
   }
-  #stuff .quote-card {
-    width: 80%;
-  }
   #stuff .quote-card .quote {
     padding: 2em 0;
   }
@@ -612,7 +606,6 @@ img {
   #stuff .products .quote-card {
     padding: 0 1em;
     margin: 0;
-    border-radius: 0;
     color: #777 !important;
   }
   #stuff .products .quote-card:before {
