@@ -91,19 +91,23 @@ video {
 }
 html {
   font-family: 'Avenir Next', 'Helvetica Neue', Avenir, Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', sans-serif;
-  color: #444;
+  color: #222;
   font-size: 0.9em;
+  letter-spacing: 0.05em;
   font-weight: normal;
+}
+body {
+  background: #fff;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-transform: none;
   line-height: 1.3em;
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
 }
 ul li {
@@ -190,15 +194,243 @@ a,
 a:visited,
 a:focus,
 a:active {
-  color: #222;
+  color: #e00;
   text-decoration: none;
 }
 a:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  color: #139ae0;
+  color: #f50;
 }
 img {
   max-width: 100%;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.clear {
+  overflow: auto;
+  zoom: 1;
+}
+.padding {
+  padding: 1em;
+}
+.field {
+  margin-bottom: 1em;
+}
+.gray {
+  color: #9e9e9e;
+}
+.btn {
+  background: #222;
+  color: #eee !important;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  padding: 1em 1.5em;
+  display: inline-block;
+}
+.btn:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+}
+.btn-light {
+  background: #f0f0f0;
+  color: #222 !important;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  padding: 1em 1.5em;
+  display: inline-block;
+}
+.btn-light:hover {
+  color: #000;
+  background: #fff;
+}
+@media screen and (min-width: 1200px) {
+  #main {
+    color: #222;
+    position: relative;
+    padding: 8em 8em 8em;
+    height: 28em;
+    background: #f8f8f8;
+  }
+  #main .slog {
+    float: left;
+    width: 30%;
+  }
+  #main .slog h1 {
+    font-size: 4em;
+  }
+  #main .slog h1.last {
+    margin-bottom: 0.5em;
+    color: #f00;
+  }
+  #main .slog p {
+    width: 18em;
+    font-size: 0.9em;
+  }
+  #main .content {
+    text-align: right;
+    width: 70%;
+    overflow: hidden;
+  }
+  #main .content img {
+    opacity: 0.9;
+    border-radius: .3em;
+    max-width: none;
+    height: 32em;
+  }
+  #stuff .open-repos,
+  #stuff .products {
+    padding: 2em 0 0;
+  }
+  #stuff .open-repos .title,
+  #stuff .products .title {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  #stuff .open-repos .intro,
+  #stuff .products .intro {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #9e9e9e;
+  }
+  #stuff .open-repos li {
+    display: inline-block;
+    float: left;
+    width: 48%;
+    margin: 2% 1%;
+    position: relative;
+  }
+  #stuff .open-repos li .open-card {
+    height: 20em;
+    margin-top: 3em;
+    background: #f8f8f8;
+  }
+  #stuff .open-repos li .open-card .figure {
+    display: block;
+    width: 10em;
+    position: relative;
+    top: -5.5em;
+    text-align: center;
+    margin: 0 auto -3em;
+  }
+  #stuff .open-repos li .open-card .content {
+    margin: 2em auto;
+    max-width: 32em;
+    text-align: center;
+  }
+  #stuff .products li {
+    display: block;
+  }
+  #stuff .products li .product-card {
+    margin-bottom: 4em;
+    height: 30em;
+    overflow: hidden;
+  }
+  #stuff .products li .product-card .figure {
+    overflow: hidden;
+    width: 60%;
+  }
+  #stuff .products li .product-card .figure img {
+    max-width: none;
+    height: 100%;
+  }
+  #stuff .products li .product-card .content {
+    height: 100%;
+    position: relative;
+  }
+  #stuff .products li .product-card .content .text {
+    position: absolute;
+    top: 10em;
+    left: 4em;
+    width: 70%;
+  }
+  #stuff .products li .product-card .content .text a {
+    color: #fff;
+  }
+  #stuff .products li .product-card.odd .figure {
+    float: left;
+  }
+  #stuff .products li .product-card.odd .content {
+    overflow: auto;
+    zoom: 1;
+    background: #2b3d51;
+    color: #607a89;
+  }
+  #stuff .products li .product-card.even .content {
+    float: left;
+    width: 40%;
+    color: #ECFA92;
+    background: #A81212;
+  }
+  #stuff .products li .quote-card {
+    max-width: 60%;
+    margin: 4em auto 5em;
+    border: 1px solid #222;
+    background: #222;
+    color: #fff;
+    font-style: italic;
+    position: relative;
+    padding: 1em 2em;
+  }
+  #stuff .products li .quote-card .figure {
+    padding: 2em 1em;
+  }
+  #stuff .products li .quote-card .figure img {
+    width: 5em;
+    border-radius: 50%;
+  }
+  #stuff .products li .quote-card .quote {
+    padding: 3.5em 0;
+    overflow: auto;
+    zoom: 1;
+  }
+  #stuff .products li .quote-card:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 2em 1em;
+  }
+  #stuff .products li .quote-card.odd .figure {
+    float: left;
+  }
+  #stuff .products li .quote-card.odd:before {
+    -webkit-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+    left: 2em;
+    top: -3em;
+    border-color: transparent #222 #222 transparent;
+  }
+  #stuff .products li .quote-card.even .quote {
+    float: left;
+    width: 80%;
+  }
+  #stuff .products li .quote-card.even .figure {
+    overflow: auto;
+    zoom: 1;
+  }
+  #stuff .products li .quote-card.even:before {
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    right: 2em;
+    top: -3em;
+    border-color: transparent transparent #222 #222;
+  }
 }
