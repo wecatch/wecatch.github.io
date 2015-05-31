@@ -1,0 +1,58 @@
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+    #main {
+        position: relative;
+        .slog {
+            top: 5em;
+            left: 2em;
+            width: 30%;
+            z-index: 10;
+            background: transparent;
+            color: #fff;
+            position: absolute;
+            .goal {
+                color: #ccc;
+            }
+        }
+        .content {
+            -webkit-filter: blur(1px);
+            -o-filter: blur(1px);
+            filter: blur(1px);
+        }
+    }
+
+    #stuff {
+        .open-repos {
+            border-bottom: 1px dashed #eee;
+        }
+        .open-card {
+            margin: 8em 1em 0;
+        }
+
+        .product-card {
+            position: relative;
+            .figure {
+                img {
+                    width: 100%;
+                }
+            }
+            .content {
+                width: 100%;
+                background: rgba(0,0,0,.3);
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #ccc;
+                .text {
+                    padding: 2em;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .quote-card {
+            width: 80%;
+        }
+    }
+}

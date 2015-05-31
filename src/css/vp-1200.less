@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) {
+    #main {
+        padding: 8em 8em 10em;
+        height: 28em;
+        background: #f8f8f8;
+        .slog {
+            float: left;
+            width: 30%;
+            h1 {
+                font-size: 4em;
+                &.last {
+                    margin-bottom: 0.5em;
+                    color: #f00;
+                }
+            }
+            .goal {
+                .gray;
+                width: 18em;
+                font-size: 0.9em;
+            }
+        }
+        .content {
+            text-align: right;
+            width: 70%;
+            overflow: hidden;
+            img {
+                opacity: 0.9;
+                border-radius: .3em;
+                max-width: none;
+                height: 32em;
+            }
+        }
+    }
+
+    #stuff {
+        .open-repos {
+            li {
+                display: inline-block;
+                float: left;
+                width: 48%;
+                margin: 2% 1%;
+                position: relative;
+                .open-card {
+                    margin-top: 3em;
+                }
+            }
+        }
+
+        .products {
+            color: #fff;
+            background: #383131;
+            li {
+                display: block;
+                .product-card {
+                    margin-bottom: 4em;
+                    height: 30em;
+                    overflow: hidden;
+                    .figure {
+                        overflow: hidden;
+                        width: 60%;
+                        img {
+                            border-radius: .3em;
+                            max-width: none;
+                            height: 100%;
+                        }
+                    }
+                    .content {
+                        height: 100%;
+                        position: relative;
+                        .text {
+                            a {
+                                color: #fff;
+                            }
+                            position: absolute;
+                            top: 10em;
+                            left: 4em;
+                            width: 70%;
+                        }
+                        
+                    }
+                    &.odd {
+                        .figure {
+                            float: left;
+                        }
+                        .content {
+                            .clear;
+                            background: #2b3d51;
+                            color: #607a89;
+                        }
+                    }
+
+                    &.even {
+                        .content {
+                            float: left;
+                            width: 40%;
+                            color: #ECFA92;
+                            background: #A81212;
+                        }
+                    }
+                }
+
+                .quote-card {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
