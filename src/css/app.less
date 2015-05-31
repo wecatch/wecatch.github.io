@@ -130,9 +130,6 @@
                 .quote-card {
                     max-width: 60%;
                     margin: 4em auto 5em;
-                    border: 1px solid #222;
-                    background: #222;
-                    color: #fff;
                     font-style: italic;
                     position: relative;
                     padding: 1em 2em;
@@ -154,6 +151,9 @@
                         border-width: 2em 1em;
                     }
                     &.odd {
+                        border: 1px solid #222;
+                        background: #222;
+                        color: #fff;
                         .figure {
                             float: left;
                         }
@@ -168,6 +168,9 @@
                         }
                     }
                     &.even {
+                        border: 1px solid #efefef;
+                        background: #efefef;
+                        color: #222;
                         .quote {
                             float: left;
                             width: 80%;
@@ -182,7 +185,7 @@
                             transform: rotate(-20deg);
                             right: 2em;
                             top: -3em;
-                            border-color: transparent transparent #222 #222;
+                            border-color: transparent transparent #efefef #efefef;
                         }
                     }
                 }
