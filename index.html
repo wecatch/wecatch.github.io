@@ -1,193 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>wecatch</title>
-    <link rel="stylesheet" href="css/app.css">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-      (function() {
-           if (!
-           /*@cc_on!@*/
-           0) return;
-           var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
-           var i= e.length;
-           while (i--){
-               document.createElement(e[i]);
-           }
-      })()
-    </script>
-    <script src="js/jquery-2.1.0.min.js"></script>
-    <script src="js/app.js"></script>
-  </head>
-  <body>
-   <!--  <nav class="nav-bar">
-      <ul>
-        <li>
-          <a href="#project">开源项目</a>
-        </li>
-        <li>
-          <a href="#team">团队成员</a>
-        </li>
-        <li>
-          <a href="#about">联系我们</a>
-        </li>
-      </ul>
-    </nav> -->
-    <article class="main center">
-      <div class="container">
-        <div class="site-logo field">
-          <a href="http://wecatch.me">
-            <img src="img/flash.png" class="site-icon">
-          </a>
-        </div>
-        <div class="title">We create better Web products</div>
-        <div class="description">
-          wecatch，独立自由的组织，致力于构建更好的Web产品, 并为开发者和团队提供更敏捷，稳定，灵活的Web解决方案以及专业的咨询服务
-        </div>
-        <div class="blink scroll-arrow">
-          <img src="img/arrow.png" style="width: 6em;">
-        </h1>
-      </div>
-    </article>
-    <article id="special" class="field wrapper">
-      <div class="container">
-        <h2 class="field center">wecatch 提供</h2>
-        <section class="special-cell center">
-          <img class="special-icon" src="img/base.png">
-          <h4 class="field">
-            解决方案
-          </h4>
-          <p>为Web开发提供快速、灵活、完整的解决方案</p>
-          <!-- <p>扩展性强，便于支撑复杂业务场景。</p> -->
-        </section>
-        <section class="special-cell center">
-          <img class="special-icon" src="img/read.png">
-          <h4 class="field">
-            技术分享
-          </h4>
-          <p>提供各种技术的最佳实践和分享</p>
-        </section>
-        <section class="special-cell center">
-          <img class="special-icon" src="img/wrench.png">
-          <h4 class="field">
-            技术咨询
-          </h4>
-          <p>在团队擅长的领域内提供技术咨询和支持。</p>
-        </section>
-        <div class="clear"></div>
-      </div>
-    </article>
-    <article id="project" class="wrapper">
-      <div class="container block-padding">
-        <h2 class="field center">开源项目</h2>
-        <section class="project-cell">
-          <h3 class="center field">
-            <a href="http://github.com/wecatch/app-turbo" target="_blank">
-              App turbo
-            </a>
-          </h3>
-          <div class="content">
-            <div class="icon center">
-              <img src="img/security.png">
-            </div>
-            <div class="brief">
-              <p>
-                app-turbo 是一个用以加速建立普通web站点和Rest api
-                <br>
-                的后端决方案，包含:
-              </p>
-              <ul>
-                <li>简易的orm封装(基于mongodb)</li>
-                <li>异步任务队列</li>
-                <li>Restful Api 服务</li>
-                <li>session管理，日志服务</li>
-                <li>缓存(基于redis，memcached等内存数据库)</li>
-              </ul>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </section>
-      </div>
-    </article>
-    <article id="team_member" class="wrapper">
-      <div class="container">
-        <h2 class="field center">关于我们</h2>
-        <p class="gray-font field center">
-          独立团队，工程师文化驱动，热爱互联网产品、技术、设计和一切。
-        </p>
-        <section class="member-wrapper">
-          <h4 class="field">
-            团队成员
-          </h4>
-          <section class="member-cell">
-            <div class="figure">
-              <a href="http://sanyuesha.com" target="_blank">
-                <img src="img/sanyuesha.jpg" class="avatar">
-              </a>
-              <h5 class="name">
-                <a href="http://sanyuesha.com" target="_blank">
-                  三月沙
-                </a>
-              </h5>
-              <p class="gray-font">wecatch程序员</p>
-            </div>
-          </section>
-          <section class="member-cell">
-            <div class="figure">
-              <a href="http://www.fangjueci.com" target="_blank">
-                <img src="img/haokuan.jpg" class="avatar">
-              </a>
-              <h5 class="name">
-                <a href="http://www.fangjueci.com" target="_blank">薰衣草之子</a>
-              </h5>
-              <p class="gray-font">wecatch程序员</p>
-            </div>
-          </section>
-          <section class="member-cell">
-            <div class="figure">
-              <a href="http://braavos.me" target="_blank">
-                <img src="img/luozaishenhai.jpg" class="avatar">
-              </a>
-              <h5 class="name">
-                <a href="http://braavos.me" target="_blank">
-                  落在深海
-                </a>
-              </h5>
-              <p class="gray-font">wecatch程序员</p>
-            </div>
-          </section>
-          <div class="clear"></div>
-        </section>
-        <section class="contact-wrapper">
-          <h4 class="field">联系我们</h4>
-          <ul class="center">
-            <li>
-              <a href="http://weibo.com/wecatch" target="_blank" title="wecatch微博">
-                <i class="fa fa-weibo"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/wecatch" target="_blank" title="github地址">
-                <i class="fa fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:;" title="wecatch微信">
-                <i class="fa fa-weixin"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <div class="clear"></div>
-      </div>
-    </article>
-    <footer>
-      <div class="container center">
-        ©2014 
-        <a href="about.html">关于wecatch</a>
-      </div>
-    </footer>
-  </body>
+    
+    <head>
+        <title>
+            wecatch
+        </title>
+        <link rel="stylesheet" href="css/app.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            (function() {
+                if (!
+                /*@cc_on!@*/
+                0) return;
+                var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+                var i = e.length;
+                while (i--) {
+                    document.createElement(e[i]);
+                }
+            })()
+        </script>
+        <script src="js/jquery-2.1.0.min.js">
+        </script>
+        <script src="js/app.js">
+        </script>
+    </head>
+    
+    <body>
+        <main>
+            <article class="screen">
+                <div class="content">
+                    <div class="logo">
+                        <a href="http://wecatch.me">
+                            <img src="img/flash.png">
+                        </a>
+                    </div>
+
+                    <div class="slogan">We create better Web products</div>
+
+                    <div class="description">wecatch，独立自由的组织，致力于构建更好的Web产品, 并为开发者和团队提供更敏捷，稳定，灵活的Web解决方案以及专业的咨询服务</div>
+                </div>
+            </article>
+            <article class="open-source"></article>
+            <article class="product"></article>
+            <footer></footer>
+        </main>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
 </html>
