@@ -55,27 +55,26 @@
     .summary {
         background: #fafafa;
         padding-bottom: 2em;
-        .brief {
-            padding-bottom: 1em;
+        padding-bottom: 1em;
+        .clear;
+        figure {
+            float: left;
+            width: 30%;
+        }
+        .content {
             .clear;
-            figure {
-                float: left;
-                width: 30%;
+            padding: 1em;
+            .intro {
+                margin-bottom: .5em;
             }
-            .content {
-                .clear;
-                padding: 1em;
-                .intro {
-                    margin-bottom: .5em;
-                }
-                ul {
-                    margin-left: 1em;
-                    li {
-                        list-style-type: disc;
-                    }
+            ul {
+                margin-left: 1em;
+                li {
+                    list-style-type: disc;
                 }
             }
         }
+
         .download {
             background: #fff;
         }
@@ -138,8 +137,23 @@
 
     @media screen and (max-width: 960px) {
         font-size: .95em;
+        nav.main {
+            .container {
+                width: 95%;
+            }
+        }
         main>article>section {
             width: 90%;
+        }
+
+        .summary {
+            figure {
+                float: none;
+                margin: auto;
+                img {
+                    width: 7em;
+                }
+            }
         }
     }
 }

@@ -524,28 +524,26 @@ pre {
 .turbo .summary {
   background: #fafafa;
   padding-bottom: 2em;
-}
-.turbo .summary .brief {
   padding-bottom: 1em;
   overflow: auto;
   zoom: 1;
 }
-.turbo .summary .brief figure {
+.turbo .summary figure {
   float: left;
   width: 30%;
 }
-.turbo .summary .brief .content {
+.turbo .summary .content {
   overflow: auto;
   zoom: 1;
   padding: 1em;
 }
-.turbo .summary .brief .content .intro {
+.turbo .summary .content .intro {
   margin-bottom: .5em;
 }
-.turbo .summary .brief .content ul {
+.turbo .summary .content ul {
   margin-left: 1em;
 }
-.turbo .summary .brief .content ul li {
+.turbo .summary .content ul li {
   list-style-type: disc;
 }
 .turbo .summary .download {
@@ -597,8 +595,18 @@ pre {
   .turbo {
     font-size: .95em;
   }
+  .turbo nav.main .container {
+    width: 95%;
+  }
   .turbo main > article > section {
     width: 90%;
+  }
+  .turbo .summary figure {
+    float: none;
+    margin: auto;
+  }
+  .turbo .summary figure img {
+    width: 7em;
   }
 }
 body {
