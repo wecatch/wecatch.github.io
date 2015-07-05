@@ -387,7 +387,7 @@ pre {
   position: relative;
   height: 35em;
   font-weight: lighter;
-  background: #fafafa;
+  background: #fcfcfc;
   text-align: center;
   color: #000;
 }
@@ -413,7 +413,7 @@ pre {
   font-size: .98em;
   color: #333;
   position: relative;
-  background: #fafafa;
+  background: #fcfcfc;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   width: 80%;
   padding: 3em 5em 2em;
@@ -554,7 +554,7 @@ pre {
 .turbo .download {
   text-align: center;
   margin: 0 auto 3em;
-  background: #fafafa;
+  background: #fcfcfc;
   padding: 3em 0 4em;
 }
 .turbo .download .desc {
