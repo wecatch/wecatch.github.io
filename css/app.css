@@ -593,6 +593,14 @@ pre {
   width: 6em;
   margin-bottom: .5em;
 }
+@media screen and (max-width: 960px) {
+  .turbo {
+    font-size: .95em;
+  }
+  .turbo main > article > section {
+    width: 90%;
+  }
+}
 body {
   font-weight: normal;
   font-size: 1em;
