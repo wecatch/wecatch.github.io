@@ -133,6 +133,9 @@ ol,
 ul {
   list-style: none;
 }
+p {
+  line-height: 1.6em;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -199,9 +202,9 @@ a:active {
   text-decoration: none;
 }
 a:hover {
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
   color: #f50;
 }
 img {
@@ -216,6 +219,9 @@ img {
 }
 .table .cell {
   display: table-cell;
+}
+.italic {
+  font-style: italic;
 }
 .left {
   text-align: left;
@@ -263,10 +269,6 @@ img {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-}
-pre {
-  white-space: pre;
-  overflow: auto;
 }
 @keyframes blink {
   0% {
@@ -325,10 +327,11 @@ code {
   color: #a6001a;
 }
 pre {
+  overflow: auto;
   text-align: left;
   white-space: pre-line;
   font-size: .9em;
-  background: rgba(200, 200, 200, 0.02);
+  background: rgba(200, 200, 200, 0.03);
   margin: 1em 0;
   border-radius: .3em;
   padding: .5em 1em;
@@ -337,7 +340,7 @@ pre {
   background: #fff;
   border: 1px solid #222;
   color: #222 !important;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   line-height: 1em;
   font-weight: 200;
   padding: .5em 1em;
@@ -353,19 +356,21 @@ pre {
   background: #fff;
   border: 1px solid #222;
   color: #222 !important;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   line-height: 1em;
   font-weight: 200;
   padding: .5em 1em;
   display: inline-block;
   padding: 1em 3em;
-  font-style: italic;
 }
 .btn-chief:hover {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   background: #f55;
   color: #fff !important;
   border-color: #f55;
+}
+.btn-chief + .btn-chief {
+  margin-left: .5em;
 }
 /* index page */
 .home main > article {
@@ -387,7 +392,7 @@ pre {
   position: relative;
   height: 35em;
   font-weight: lighter;
-  background: #fafafa;
+  background: #f3f5f8;
   text-align: center;
   color: #000;
 }
@@ -395,10 +400,11 @@ pre {
   padding-top: 8em;
 }
 .home .screen .content .logo,
-.home .screen .content .slogan,
-.home .screen .content .desc {
-  color: #000;
+.home .screen .content .slogan {
   margin-bottom: 1em;
+}
+.home .screen .content .desc {
+  color: #555;
 }
 .home .screen .content .slogan {
   font-weight: 200;
@@ -413,9 +419,9 @@ pre {
   font-size: .98em;
   color: #333;
   position: relative;
-  background: #fafafa;
+  background: #f3f5f8;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 70%;
   padding: 3em 5em 2em;
   margin: auto;
   margin-top: 8em;
@@ -522,7 +528,7 @@ pre {
   margin-bottom: 1em;
 }
 .turbo .summary {
-  background: #fafafa;
+  background: #f3f5f8;
   padding-bottom: 2em;
   padding-bottom: 1em;
   overflow: auto;
@@ -547,12 +553,12 @@ pre {
   list-style-type: disc;
 }
 .turbo .summary .download {
-  background: #fff;
+  background: #fafafa;
 }
 .turbo .download {
   text-align: center;
   margin: 0 auto 3em;
-  background: #fafafa;
+  background: #f3f5f8;
   padding: 3em 0 4em;
 }
 .turbo .download .desc {
@@ -564,14 +570,14 @@ pre {
   font-size: .9em;
 }
 .turbo .how-to-use section .title {
-  color: #f55;
-  margin: 1em 0;
+  font-weight: 200;
 }
 .turbo .how-to-use .download {
   margin-top: 1em;
 }
 .turbo .who-use .title span {
   color: #f55;
+  font-size: .9em;
   font-weight: 200;
 }
 .turbo .who-use .friends {
@@ -588,7 +594,7 @@ pre {
   -webkit-filter: grayscale(0%);
 }
 .turbo .who-use .friends-item figure img {
-  width: 6em;
+  width: 4em;
   margin-bottom: .5em;
 }
 @media screen and (max-width: 960px) {
