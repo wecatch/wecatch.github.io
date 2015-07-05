@@ -1,3 +1,14 @@
+.table {
+    display: table;
+    width: 100%;
+    .row {
+        display: table-row;
+    }
+    .cell {
+        display: table-cell;
+    }
+}
+
 
 .left {
     text-align: left;
@@ -57,3 +68,43 @@
   -o-transition: all .5s;
   transition: all .5s;
 }
+
+pre {
+  white-space: pre;
+  overflow: auto;
+}
+
+
+ @keyframes arrowBlink {
+    0% { opacity: 1}
+    50% { opacity: .7}
+    100% { opacity: 0 }
+ }
+ 
+ @-webkit-keyframes arrowBlink {
+    0% { opacity: 1}
+    50% { opacity: .7}
+    100% { opacity: 0 }
+ }
+ 
+ .blink {
+    -webkit-animation: arrowBlink 3s infinite ease-in;
+    animation: arrowBlink 3s infinite ease-in;
+    -webkit-animation: arrowBlink 3s infinite ease-in;
+    animation: arrowBlink 3s infinite ease-in;
+ }
+
+ code {
+    font-family: Monaco !important;
+    color: #D5E879;
+ }
+
+ pre {
+    text-align: left;
+    white-space: pre-line;
+    font-size: .9em;
+    background: rgba(255,255,255,.02);
+    margin: 1em 0;
+    border-radius: .3em;
+    padding: .5em 1em;
+ }

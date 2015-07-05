@@ -207,6 +207,16 @@ a:hover {
 img {
   max-width: 100%;
 }
+.table {
+  display: table;
+  width: 100%;
+}
+.table .row {
+  display: table-row;
+}
+.table .cell {
+  display: table-cell;
+}
 .left {
   text-align: left;
 }
@@ -254,39 +264,92 @@ img {
   -o-transition: all .5s;
   transition: all .5s;
 }
+pre {
+  white-space: pre;
+  overflow: auto;
+}
+@keyframes arrowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.blink {
+  -webkit-animation: arrowBlink 3s infinite ease-in;
+  animation: arrowBlink 3s infinite ease-in;
+}
+code {
+  font-family: Monaco !important;
+  color: #D5E879;
+}
+pre {
+  text-align: left;
+  white-space: pre-line;
+  font-size: .9em;
+  background: rgba(255, 255, 255, 0.02);
+  margin: 1em 0;
+  border-radius: .3em;
+  padding: .5em 1em;
+}
 .btn {
-  background: #222;
-  color: #eee !important;
-  letter-spacing: 0.1em;
-  line-height: 1em;
-  padding: 1em 1.5em;
-  display: inline-block;
-}
-.btn:hover {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.9);
-}
-.btn-light {
-  background: #f0f0f0;
+  background: #fff;
+  border: 1px solid #222;
   color: #222 !important;
   letter-spacing: 0.1em;
   line-height: 1em;
-  padding: 1em 1.5em;
+  font-weight: 200;
+  padding: .5em 1em;
   display: inline-block;
 }
-.btn-light:hover {
-  color: #000;
+.btn:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background: #f55;
+  color: #fff !important;
+  border-color: #f55;
+}
+.btn-chief {
   background: #fff;
+  border: 1px solid #222;
+  color: #222 !important;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  font-weight: 200;
+  padding: .5em 1em;
+  display: inline-block;
+  padding: 1em 3em;
+  font-style: italic;
+}
+.btn-chief:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background: #f55;
+  color: #fff !important;
+  border-color: #f55;
 }
 /* index page */
-.home > article {
+.home main > article {
   margin-bottom: 2em;
 }
-.home > article .title {
+.home main > article .title {
   text-align: center;
   margin-bottom: .5em;
 }
-.home > article .desc {
+.home main > article .desc {
   margin-bottom: 1em;
   color: #aaa;
   text-align: center;
@@ -296,14 +359,14 @@ img {
   margin-bottom: 0;
   padding: 0 1em;
   position: relative;
-  height: 38em;
+  height: 35em;
   font-weight: lighter;
   background: #fafafa;
   text-align: center;
   color: #000;
 }
 .home .screen .content {
-  padding-top: 9em;
+  padding-top: 8em;
 }
 .home .screen .content .logo,
 .home .screen .content .slogan,
@@ -346,7 +409,7 @@ img {
   padding-left: 1em;
 }
 .home .open-source .project-item .content ul li {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 @media screen and (max-width: 960px) {
   .home .screen {
@@ -379,6 +442,116 @@ img {
   .home .open-source .project-item .content {
     padding: 0 2em 1em;
   }
+}
+.turbo nav.main {
+  height: 5em;
+  line-height: 5em;
+  background: #fcfcfc;
+  border-bottom: 1px solid #f5f5f5;
+}
+.turbo nav.main .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.turbo nav.main .container #site_name {
+  font-size: 1.5em;
+  color: #222;
+  font-style: italic;
+  position: relative;
+  padding-left: .5em;
+}
+.turbo nav.main .container #site_name:after {
+  -webkit-animation: arrowBlink 3s infinite ease-in;
+  animation: arrowBlink 3s infinite ease-in;
+  position: absolute;
+  right: -5px;
+  bottom: 3px;
+  content: "";
+  border: 2px solid #222;
+  border-width: 2px;
+}
+.turbo nav.main .container .site-logo {
+  float: right;
+  line-height: 5.5em;
+  height: 5em;
+}
+.turbo main > article > section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+.turbo main > article > section h3.title {
+  margin-bottom: .5em;
+}
+.turbo main > article > section > section {
+  margin-bottom: 1em;
+}
+.turbo .summary .brief {
+  padding-bottom: 1em;
+  overflow: auto;
+  zoom: 1;
+}
+.turbo .summary .brief figure {
+  float: left;
+  width: 30%;
+}
+.turbo .summary .brief .content {
+  overflow: auto;
+  zoom: 1;
+  padding: 1em;
+}
+.turbo .summary .brief .content .intro {
+  margin-bottom: .5em;
+}
+.turbo .summary .brief .content ul {
+  margin-left: 1em;
+}
+.turbo .summary .brief .content ul li {
+  list-style-type: disc;
+}
+.turbo .download {
+  text-align: center;
+  margin: 3em auto;
+  background: #fcfcfe;
+  padding: 3em 0 4em;
+}
+.turbo .download .desc {
+  margin-bottom: 1.5em;
+  font-size: .9em;
+  color: #999;
+}
+.turbo .how-to-use {
+  color: #f0f0f0;
+  font-size: .9em;
+  background: #333;
+}
+.turbo .how-to-use section .title {
+  color: #f55;
+  margin: 1em 0;
+}
+.turbo .how-to-use .download {
+  background: #444;
+}
+.turbo .who-use .title span {
+  color: #f55;
+  font-weight: 200;
+}
+.turbo .who-use .friends {
+  margin-top: 2em;
+}
+.turbo .who-use .friends-item {
+  font-size: .9em;
+  text-align: center;
+  width: 10em;
+  display: inline-block;
+  -webkit-filter: grayscale(100%);
+}
+.turbo .who-use .friends-item:hover {
+  -webkit-filter: grayscale(0%);
+}
+.turbo .who-use .friends-item figure img {
+  width: 6em;
+  margin-bottom: .5em;
 }
 body {
   font-weight: normal;

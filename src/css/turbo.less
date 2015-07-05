@@ -1,0 +1,127 @@
+.turbo {
+    nav.main {
+        height: 5em;
+        line-height: 5em;
+        background: #fcfcfc;
+        border-bottom: 1px solid #f5f5f5;
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            #site_name {
+                font-size: 1.5em;
+                color: #222;
+                font-style: italic;
+                position: relative;
+                padding-left: .5em;
+                &:after {
+                    .blink;
+                    position: absolute;
+                    right: -5px;
+                    bottom: 3px;
+                    content: "";
+                    border: 2px solid #222;
+                    border-width: 2px;
+                }
+            }
+            .site-logo {
+                float: right;
+                line-height: 5.5em;
+                height: 5em;
+            }
+        }
+    }
+
+    main>article>section {
+        width: 80%;
+        margin: 0 auto;
+        padding: 3em 0;
+        h3.title {
+            margin-bottom: .5em;
+        }
+
+        >section {
+            margin-bottom: 1em;
+        }
+    }
+
+    .summary {
+        .brief {
+            padding-bottom: 1em;
+            .clear;
+            figure {
+                float: left;
+                width: 30%;
+            }
+            .content {
+                .clear;
+                padding: 1em;
+                .intro {
+                    margin-bottom: .5em;
+                }
+                ul {
+                    margin-left: 1em;
+                    li {
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    .download {
+        text-align: center;
+        margin: 3em auto;
+        background: #fcfcfe;
+        padding: 3em 0 4em;
+        .desc {
+            margin-bottom: 1.5em;
+            font-size: .9em;
+            color: #999;
+        }
+    }
+
+    .how-to-use {
+        color: #f0f0f0;
+        font-size: .9em;
+        background: #333;
+        section {
+            .title {
+                color: #f55;
+                margin: 1em 0;
+            }
+        }
+
+        .download {
+            background: #444;
+        }
+    }
+
+    .who-use {
+        .title span {
+            color: #f55;
+            font-weight: 200;
+        }
+
+        .friends {
+            margin-top: 2em;
+        }
+
+        .friends-item {
+            font-size: .9em;
+            text-align: center;
+            width: 10em;
+            display: inline-block;
+            -webkit-filter: grayscale(100%);
+            &:hover {
+                -webkit-filter: grayscale(0%);
+            }
+            figure {
+                img {
+                    width: 6em;
+                    margin-bottom: .5em;
+                }
+            }
+        }
+    }
+}

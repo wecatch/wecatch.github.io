@@ -1,25 +1,22 @@
 .btn {
-    background: #222;
-    color: #eee !important;
-    letter-spacing: 0.1em;
-    line-height: 1em;
-    padding: 1em 1.5em;
-    display: inline-block;
-    &:hover {
-        color: #fff;
-        background: rgba(0,0,0,0.9);
-    }
-}
-
-.btn-light {
-    background: #f0f0f0;
+    background: #fff;
+    border: 1px solid #222;
     color: #222 !important;
     letter-spacing: 0.1em;
     line-height: 1em;
-    padding: 1em 1.5em;
+    font-weight: 200;
+    padding: .5em 1em;
     display: inline-block;
     &:hover {
-        color: #000;
-        background: #fff;
+        box-shadow: 0 0 2px rgba(0,0,0,.3);
+        background: #f55;
+        color: #fff !important;
+        border-color: #f55;
     }
+}
+
+.btn-chief {
+    .btn;
+    padding: 1em 3em;
+    font-style: italic;
 }
