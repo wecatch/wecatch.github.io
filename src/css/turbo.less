@@ -13,6 +13,15 @@
                 font-style: italic;
                 position: relative;
                 padding-left: .5em;
+                &:before {
+                    .reverse-blink;
+                    position: absolute;
+                    right: -12px;
+                    bottom: 3px;
+                    content: "";
+                    border: 2px solid #222;
+                    border-width: 2px;
+                }
                 &:after {
                     .blink;
                     position: absolute;

@@ -268,7 +268,7 @@ pre {
   white-space: pre;
   overflow: auto;
 }
-@keyframes arrowBlink {
+@keyframes blink {
   0% {
     opacity: 1;
   }
@@ -279,7 +279,7 @@ pre {
     opacity: 0;
   }
 }
-@-webkit-keyframes arrowBlink {
+@-webkit-keyframes blink {
   0% {
     opacity: 1;
   }
@@ -287,12 +287,38 @@ pre {
     opacity: 0.7;
   }
   100% {
+    opacity: 0;
+  }
+}
+@keyframes reverseBlink {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes reverseBlink {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  0% {
     opacity: 0;
   }
 }
 .blink {
-  -webkit-animation: arrowBlink 3s infinite ease-in;
-  animation: arrowBlink 3s infinite ease-in;
+  -webkit-animation: blink 2s infinite ease-in;
+  animation: blink 2s infinite ease-in;
+}
+.reverse-blink {
+  -webkit-animation: reverseBlink 2s infinite ease-in;
+  animation: reverseBlink 2s infinite ease-in;
 }
 code {
   font-family: Monaco !important;
@@ -460,9 +486,19 @@ pre {
   position: relative;
   padding-left: .5em;
 }
+.turbo nav.main .container #site_name:before {
+  -webkit-animation: reverseBlink 2s infinite ease-in;
+  animation: reverseBlink 2s infinite ease-in;
+  position: absolute;
+  right: -12px;
+  bottom: 3px;
+  content: "";
+  border: 2px solid #222;
+  border-width: 2px;
+}
 .turbo nav.main .container #site_name:after {
-  -webkit-animation: arrowBlink 3s infinite ease-in;
-  animation: arrowBlink 3s infinite ease-in;
+  -webkit-animation: blink 2s infinite ease-in;
+  animation: blink 2s infinite ease-in;
   position: absolute;
   right: -5px;
   bottom: 3px;

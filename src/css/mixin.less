@@ -75,24 +75,44 @@ pre {
 }
 
 
- @keyframes arrowBlink {
+ @keyframes blink {
     0% { opacity: 1}
     50% { opacity: .7}
     100% { opacity: 0 }
  }
  
- @-webkit-keyframes arrowBlink {
+ @-webkit-keyframes blink {
     0% { opacity: 1}
     50% { opacity: .7}
     100% { opacity: 0 }
+ }
+
+ @keyframes reverseBlink {
+    100% { opacity: 1}
+    50% { opacity: .7}
+    0% { opacity: 0 }
+ }
+ 
+ @-webkit-keyframes reverseBlink {
+    100% { opacity: 1}
+    50% { opacity: .7}
+    0% { opacity: 0 }
  }
  
  .blink {
-    -webkit-animation: arrowBlink 3s infinite ease-in;
-    animation: arrowBlink 3s infinite ease-in;
-    -webkit-animation: arrowBlink 3s infinite ease-in;
-    animation: arrowBlink 3s infinite ease-in;
+    -webkit-animation: blink 2s infinite ease-in;
+    animation: blink 2s infinite ease-in;
+    -webkit-animation: blink 2s infinite ease-in;
+    animation: blink 2s infinite ease-in;
  }
+
+ .reverse-blink {
+    -webkit-animation: reverseBlink 2s infinite ease-in;
+    animation: reverseBlink 2s infinite ease-in;
+    -webkit-animation: reverseBlink 2s infinite ease-in;
+    animation: reverseBlink 2s infinite ease-in;
+ }
+
 
  code {
     font-family: Monaco !important;
