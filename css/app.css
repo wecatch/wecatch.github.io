@@ -450,7 +450,7 @@ pre {
   border-bottom: 1px solid #f5f5f5;
 }
 .turbo nav.main .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .turbo nav.main .container #site_name {
@@ -476,7 +476,7 @@ pre {
   height: 5em;
 }
 .turbo main > article > section {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 3em 0;
 }
