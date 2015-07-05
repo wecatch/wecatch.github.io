@@ -2,97 +2,9 @@
 @import url('meta.less');
 @import url('mixin.less');
 @import url('btn.less');
+@import url('index.less');
 
 body {
     font-weight: normal;
     font-size: 1em;
-}
-
-main>article {
-    .title {
-        text-align: center;
-        margin-bottom: .5em;
-    }
-    .desc {
-        margin-bottom: 1em;
-        color: #aaa;
-        text-align: center;
-        font-size: .9em;
-    }
-    margin-bottom: 2em;
-}
-
-.screen {
-    margin-bottom: 0;
-    padding: 0 1em;
-    position: relative;
-    height: 38em;
-    font-weight: lighter;
-    background: #fafafa;
-    text-align: center;
-    color: #000;
-    .content {
-        padding-top: 9em;
-        .logo, .slogan, .desc {
-            color: #000;
-            margin-bottom: 1em;
-        }
-        .slogan {
-            font-weight: 200;
-            font-size: 2em;
-        }
-    }
-}
-
-.open-source {
-    .clear;
-    padding: 3em;
-    .project-item {
-        position: relative;
-        background: #fafafa;
-        box-shadow: 0 0 3px rgba(0,0,0,0.1);
-        width: 60%;
-        padding: 3em 5em 2em;
-        margin: auto;
-        margin-top: 8em;
-        .logo {
-            position: absolute;
-            top: -6em;
-        }
-        .title {
-            a {
-                font-weight: 200;
-            }
-        }
-        .content {
-            padding: 0 5em 3em;
-            ol {
-                li {
-                    list-style-type: circle;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .open-source {
-        padding: 1em 0;
-        .project-item {
-            font-size: .9em;
-            margin-top: 3em;
-            width: 100%;
-            padding: 2em 0 1em;
-            .logo {
-                top: -4em;
-                img {
-                    width: 6em;
-                }
-            }
-
-            .content {
-                padding: 0 2em 1em;
-            }
-        }
-    }
 }

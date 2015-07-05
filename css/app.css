@@ -88,6 +88,7 @@ video {
 }
 * {
   outline: none;
+  box-sizing: border-box;
 }
 html {
   font-family: 'Helvetica Neue', Avenir, Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', sans-serif;
@@ -206,9 +207,6 @@ a:hover {
 img {
   max-width: 100%;
 }
-ol {
-  padding-left: 1em;
-}
 .left {
   text-align: left;
 }
@@ -280,24 +278,21 @@ ol {
   color: #000;
   background: #fff;
 }
-body {
-  font-weight: normal;
-  font-size: 1em;
-}
-main > article {
+/* index page */
+.home > article {
   margin-bottom: 2em;
 }
-main > article .title {
+.home > article .title {
   text-align: center;
   margin-bottom: .5em;
 }
-main > article .desc {
+.home > article .desc {
   margin-bottom: 1em;
   color: #aaa;
   text-align: center;
   font-size: .9em;
 }
-.screen {
+.home .screen {
   margin-bottom: 0;
   padding: 0 1em;
   position: relative;
@@ -307,63 +302,85 @@ main > article .desc {
   text-align: center;
   color: #000;
 }
-.screen .content {
+.home .screen .content {
   padding-top: 9em;
 }
-.screen .content .logo,
-.screen .content .slogan,
-.screen .content .desc {
+.home .screen .content .logo,
+.home .screen .content .slogan,
+.home .screen .content .desc {
   color: #000;
   margin-bottom: 1em;
 }
-.screen .content .slogan {
+.home .screen .content .slogan {
   font-weight: 200;
   font-size: 2em;
 }
-.open-source {
+.home .open-source {
   overflow: auto;
   zoom: 1;
   padding: 3em;
 }
-.open-source .project-item {
+.home .open-source .project-item {
+  font-size: .98em;
+  color: #333;
   position: relative;
   background: #fafafa;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  width: 80%;
   padding: 3em 5em 2em;
   margin: auto;
   margin-top: 8em;
 }
-.open-source .project-item .logo {
+.home .open-source .project-item .logo {
   position: absolute;
   top: -6em;
 }
-.open-source .project-item .title a {
+.home .open-source .project-item .title a {
   font-weight: 200;
 }
-.open-source .project-item .content {
+.home .open-source .project-item .content {
   padding: 0 5em 3em;
 }
-.open-source .project-item .content ol li {
+.home .open-source .project-item .content ul {
+  padding-top: .5em;
+  padding-left: 1em;
+}
+.home .open-source .project-item .content ul li {
   list-style-type: circle;
 }
 @media screen and (max-width: 960px) {
-  .open-source {
+  .home .screen {
+    margin-bottom: 0;
+    padding: 0 1em;
+    position: relative;
+    height: 30em;
+  }
+  .home .screen .content {
+    padding-top: 5em;
+  }
+  .home .screen .content .slogan {
+    font-size: 1.5em;
+  }
+  .home .open-source {
     padding: 1em 0;
   }
-  .open-source .project-item {
+  .home .open-source .project-item {
     font-size: .9em;
     margin-top: 3em;
     width: 100%;
     padding: 2em 0 1em;
   }
-  .open-source .project-item .logo {
+  .home .open-source .project-item .logo {
     top: -4em;
   }
-  .open-source .project-item .logo img {
+  .home .open-source .project-item .logo img {
     width: 6em;
   }
-  .open-source .project-item .content {
+  .home .open-source .project-item .content {
     padding: 0 2em 1em;
   }
+}
+body {
+  font-weight: normal;
+  font-size: 1em;
 }
