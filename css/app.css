@@ -322,16 +322,16 @@ pre {
 }
 code {
   font-family: Monaco !important;
-  color: #D5E879;
+  color: #a6001a;
 }
 pre {
   text-align: left;
   white-space: pre-line;
   font-size: .9em;
-  /*background: rgba(255,255,255,.02);*/
+  background: rgba(200, 200, 200, 0.02);
   margin: 1em 0;
   border-radius: .3em;
-  padding: .5em 0;
+  padding: .5em 1em;
 }
 .btn {
   background: #fff;
@@ -472,7 +472,6 @@ pre {
 .turbo nav.main {
   height: 5em;
   line-height: 5em;
-  background: #fcfcfc;
   border-bottom: 1px solid #f5f5f5;
 }
 .turbo nav.main .container {
@@ -522,6 +521,10 @@ pre {
 .turbo main > article > section > section {
   margin-bottom: 1em;
 }
+.turbo .summary {
+  background: #fcfcfc;
+  padding-bottom: 2em;
+}
 .turbo .summary .brief {
   padding-bottom: 1em;
   overflow: auto;
@@ -545,10 +548,13 @@ pre {
 .turbo .summary .brief .content ul li {
   list-style-type: disc;
 }
+.turbo .summary .download {
+  background: #fff;
+}
 .turbo .download {
   text-align: center;
   margin: 0 auto 3em;
-  background: #fcfcfe;
+  background: #fafafa;
   padding: 3em 0 4em;
 }
 .turbo .download .desc {
@@ -557,9 +563,7 @@ pre {
   color: #999;
 }
 .turbo .how-to-use {
-  color: #f0f0f0;
   font-size: .9em;
-  background: #333;
 }
 .turbo .how-to-use section .title {
   color: #f55;
@@ -567,7 +571,6 @@ pre {
 }
 .turbo .how-to-use .download {
   margin-top: 1em;
-  background: #282828;
 }
 .turbo .who-use .title span {
   color: #f55;
