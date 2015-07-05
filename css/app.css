@@ -392,7 +392,7 @@ pre {
   position: relative;
   height: 35em;
   font-weight: lighter;
-  background: #f3f5f8;
+  background: #f4f4f5;
   text-align: center;
   color: #000;
 }
@@ -419,7 +419,7 @@ pre {
   font-size: .98em;
   color: #333;
   position: relative;
-  background: #f3f5f8;
+  background: #f4f4f5;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   width: 70%;
   padding: 3em 5em 2em;
@@ -528,7 +528,7 @@ pre {
   margin-bottom: 1em;
 }
 .turbo .summary {
-  background: #f3f5f8;
+  background: #f4f4f5;
   padding-bottom: 2em;
   padding-bottom: 1em;
   overflow: auto;
@@ -558,7 +558,7 @@ pre {
 .turbo .download {
   text-align: center;
   margin: 0 auto 3em;
-  background: #f3f5f8;
+  background: #f4f4f5;
   padding: 3em 0 4em;
 }
 .turbo .download .desc {
@@ -607,6 +607,9 @@ pre {
   .turbo main > article > section {
     width: 90%;
   }
+  .turbo .download .btn-chief {
+    margin-bottom: 1em;
+  }
   .turbo .summary figure {
     float: none;
     margin: auto;
@@ -618,4 +621,9 @@ pre {
 body {
   font-weight: normal;
   font-size: 1em;
+}
+footer {
+  height: 2em;
+  font-size: .8em;
+  text-align: center;
 }
