@@ -1,10 +1,11 @@
 .turbo {
+    @block_witdh: 65%;
     nav.main {
         height: 5em;
         line-height: 5em;
         border-bottom: 1px solid #f5f5f5;
         .container {
-            width: 70%;
+            width: @block_witdh;
             margin: 0 auto;
             #site_name {
                 font-size: 1.5em;
@@ -40,7 +41,7 @@
     }
 
     main>article>section {
-        width: 70%;
+        width: @block_witdh;
         margin: 0 auto;
         padding: 3em 0;
         h3.title {

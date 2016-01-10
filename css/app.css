@@ -413,38 +413,48 @@ pre {
   font-weight: 200;
   font-size: 2em;
 }
-.home .open-source {
+.home .open-source,
+.home .product {
   overflow: auto;
   zoom: 1;
   padding: 3em;
 }
-.home .open-source .project-item {
+.home .open-source > .list > .item,
+.home .product > .list > .item {
   font-size: .98em;
   color: #333;
   position: relative;
   background: #f4f4f5;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  width: 70%;
+  width: 65%;
   padding: 3em 5em 2em;
   margin: auto;
   margin-top: 8em;
 }
-.home .open-source .project-item .logo {
+.home .open-source > .list > .item .logo,
+.home .product > .list > .item .logo {
   position: absolute;
   top: -6em;
 }
-.home .open-source .project-item .title a {
+.home .open-source > .list > .item .title a,
+.home .product > .list > .item .title a {
   font-weight: 200;
 }
-.home .open-source .project-item .content {
+.home .open-source > .list > .item .content,
+.home .product > .list > .item .content {
   padding: 0 5em 3em;
 }
-.home .open-source .project-item .content ul {
+.home .open-source > .list > .item .content ul,
+.home .product > .list > .item .content ul {
   padding-top: .5em;
   padding-left: 1em;
 }
-.home .open-source .project-item .content ul li {
+.home .open-source > .list > .item .content ul li,
+.home .product > .list > .item .content ul li {
   list-style-type: disc;
+}
+.home .product > .list > .item {
+  margin-top: 2em;
 }
 @media screen and (max-width: 960px) {
   .home .screen {
@@ -459,22 +469,27 @@ pre {
   .home .screen .content .slogan {
     font-size: 1.5em;
   }
-  .home .open-source {
+  .home .open-source,
+  .home .product {
     padding: 1em 0;
   }
-  .home .open-source .project-item {
+  .home .open-source > .list > .item,
+  .home .product > .list > .item {
     font-size: .9em;
     margin-top: 4em;
     width: 100%;
     padding: 2em 0 1em;
   }
-  .home .open-source .project-item .logo {
+  .home .open-source > .list > .item .logo,
+  .home .product > .list > .item .logo {
     top: -4em;
   }
-  .home .open-source .project-item .logo img {
+  .home .open-source > .list > .item .logo img,
+  .home .product > .list > .item .logo img {
     width: 6em;
   }
-  .home .open-source .project-item .content {
+  .home .open-source > .list > .item .content,
+  .home .product > .list > .item .content {
     padding: 0 2em 1em;
   }
 }
@@ -484,7 +499,7 @@ pre {
   border-bottom: 1px solid #f5f5f5;
 }
 .turbo nav.main .container {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 .turbo nav.main .container #site_name {
@@ -520,7 +535,7 @@ pre {
   height: 5em;
 }
 .turbo main > article > section {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   padding: 3em 0;
 }

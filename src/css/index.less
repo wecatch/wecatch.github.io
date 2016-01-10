@@ -41,16 +41,16 @@
         }
     }
 
-    .open-source {
+    .open-source, .product {
         .clear;
         padding: 3em;
-        .project-item {
+        >.list>.item {
             font-size: .98em;
             color: #333;
             position: relative;
             background: #f4f4f5;
             box-shadow: 0 0 3px rgba(0,0,0,0.1);
-            width: 70%;
+            width: 65%;
             padding: 3em 5em 2em;
             margin: auto;
             margin-top: 8em;
@@ -77,6 +77,12 @@
         }
     }
 
+    .product {
+        >.list>.item {
+            margin-top: 2em;
+        }
+    }
+
     @media screen and (max-width: 960px) {
 
         .screen {
@@ -93,9 +99,9 @@
             }
         }
 
-        .open-source {
+        .open-source, .product {
             padding: 1em 0;
-            .project-item {
+            &>.list>.item {
                 font-size: .9em;
                 margin-top: 4em;
                 width: 100%;
