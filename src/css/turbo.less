@@ -1,47 +1,6 @@
 .turbo {
-    @block_witdh: 65%;
-    nav.main {
-        height: 5em;
-        line-height: 5em;
-        border-bottom: 1px solid #f5f5f5;
-        .container {
-            width: @block_witdh;
-            margin: 0 auto;
-            #site_name {
-                font-size: 1.5em;
-                color: #222;
-                font-style: italic;
-                position: relative;
-                padding-left: .5em;
-                &:before {
-                    .reverse-blink;
-                    position: absolute;
-                    right: -12px;
-                    bottom: 3px;
-                    content: "";
-                    border: 2px solid #222;
-                    border-width: 2px;
-                }
-                &:after {
-                    .blink;
-                    position: absolute;
-                    right: -5px;
-                    bottom: 3px;
-                    content: "";
-                    border: 2px solid #222;
-                    border-width: 2px;
-                }
-            }
-            .site-logo {
-                float: right;
-                line-height: 5.5em;
-                height: 5em;
-            }
-        }
-    }
-
     main>article>section {
-        width: @block_witdh;
+        width: @block_width;
         margin: 0 auto;
         padding: 3em 0;
         h3.title {
@@ -83,6 +42,7 @@
     }
     
     .download {
+        border: 1px solid @_border_light;
         text-align: center;
         margin: 0 auto 3em;
         background: #f4f4f5;

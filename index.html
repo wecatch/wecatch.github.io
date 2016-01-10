@@ -4,6 +4,7 @@
         <title>
             wecatch - We create better Web products
         </title>
+        <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/app.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +25,21 @@
     </head>
     <body class="home">
         <main>
+            <nav class="main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="http://wecatch.me" id="site_name">Wecatch</a>
+                    </div>
+                    <ul class="site-nav">
+                        <li>
+                            <a href="project.html">开源项目</a>
+                        </li>
+                        <li>
+                            <a href="product.html">产品</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <article class="screen">
                 <section class="content">
                     <div class="logo">
@@ -37,7 +53,7 @@
             </article>
             <article class="open-source">
                 <h3 class="title">开源项目</h3>
-                <ul id="open_source" class="list">
+                <ul id="open_source" class="open-source-slide list">
                     <li class="item">
                         <figure class="logo">
                             <img src="img/turbo.png">
@@ -55,7 +71,7 @@
                     </li>
                     <li class="item">
                         <figure class="logo">
-                            <img src="img/turbo.png">
+                            <img src="img/eem-light-b.png">
                         </figure>
                         <h3 class="title">
                             <a href="http://github.com/wecatch/ember-easy-orm" target="_blank">ember-easy-orm</a>
@@ -70,7 +86,7 @@
                     </li>
                     <li class="item">
                         <figure class="logo">
-                            <img src="img/turbo.png">
+                            <img src="img/react.png">
                         </figure>
                         <h3 class="title">
                             <a href="http://imiao.in" target="_blank">react-ui-component</a>
@@ -90,11 +106,11 @@
                 <ul id="product_list" class="list">
                     <li class="item">
                         <h3 class="title">
-                            <a href="git-star.html" target="_blank">git star</a>
+                            <a href="http://git-star.com" target="_blank">GitStar</a>
                         </h3>
                         <div class="content">
                             <div class="brief">
-                                <p>git star 使你能够更清晰直接的管理你 Github Star, 为项目设置标签，根据标签或语言快速检索项目</p>
+                                <p>GitStar 使你能够更清晰直接的管理你 Github Star, 为项目设置标签，根据标签或语言快速检索项目</p>
                             </div>
                         </div>
                     </li>
@@ -105,6 +121,7 @@
             <p>Beijing © 2014 wecatch</p>
         </footer>
         <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

@@ -1,0 +1,57 @@
+body.project {
+    .main-intro {
+        padding: 3em 1em;
+        text-align: center;
+        color: @_gray;
+        border-bottom: 1px solid @_border_light;
+        background: @_background;
+        margin-bottom: 2em;
+    }
+
+    .main-list {
+        padding: 0 5em;
+        >.item {
+            .clear;
+            border: 1px solid @_border_light;
+            margin-bottom: 2em;
+            position: relative;
+
+            .info {
+                float: left;
+                width: 14em;
+                overflow: hidden;
+                background: @_background;
+                padding: 3em 2em;
+                text-align: center;
+                border-right: 1px solid @_border_light;
+
+                .logo {
+                    width: 100%;
+                    height: 6em;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: .5em;
+                    img {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0 auto 1em;
+                        width: 6em;
+                        height: 6em;
+                    }
+                }
+                .title {
+                    font-weight: 200;
+                    font-size: 1.1rem;
+                }
+            }
+            .content {
+                .clear;
+                font-size: .95em;
+                padding: 3em;
+            }
+        }
+    }
+}
