@@ -709,6 +709,7 @@ body.product .main-list .item .brief {
 nav.main {
   overflow: auto;
   zoom: 1;
+  overflow: hidden;
   height: 5em;
   line-height: 5em;
   border-bottom: 1px solid #e5e5e5;
