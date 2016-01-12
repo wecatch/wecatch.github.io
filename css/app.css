@@ -688,10 +688,14 @@ body.product .main-intro {
 body.product .main-list {
   overflow: auto;
   zoom: 1;
+  padding-top: 2em;
 }
 body.product .main-list .item .logo {
   float: left;
-  width: 40em;
+  width: 37em;
+}
+body.product .main-list .item .logo img {
+  background: #e8e8e8;
 }
 body.product .main-list .item .content {
   overflow: auto;
