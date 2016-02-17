@@ -5,46 +5,28 @@ body.project {
 
     .main-list {
         >.item {
-            .clear;
+            ._card;
+            height: 15em;
             border: 1px solid @_border_light;
-            margin-bottom: 2em;
+            margin-bottom: 3em;
             position: relative;
+            background: @_background;
+            border-left: 1px solid @_border_light;
 
             .info {
-                float: left;
-                width: 14em;
+                width: 18em;
                 overflow: hidden;
-                background: @_background;
-                padding: 3em 2em;
-                text-align: center;
-                border-right: 1px solid @_border_light;
 
-                .logo {
-                    width: 100%;
-                    height: 6em;
-                    position: relative;
-                    overflow: hidden;
-                    margin-bottom: .5em;
-                    img {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        margin: 0 auto 1em;
-                        width: 6em;
-                        height: 6em;
-                    }
-                }
                 .title {
                     font-weight: 200;
-                    font-size: 1.1rem;
+                    font-size: 2rem;
                 }
             }
             .content {
                 .clear;
+                text-align: initial;
                 font-size: .95em;
-                padding: 3em;
+                padding: 0 1em;
             }
         }
     }
