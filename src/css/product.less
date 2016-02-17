@@ -1,34 +1,32 @@
 body.product {
     .main-intro {
-        padding: 3em 1em;
-        text-align: center;
-        color: @_gray;
-        border-bottom: 1px solid @_border_light;
-        background: @_background;
-        margin-bottom: 2em;
+        ._global_hint;
     }
     .main-list {
         .clear;
         padding-top: 2em;
         .item {
-            .logo {
+            ._item_transition;
+            background-color: @_background;
+            border: 1px solid @_border_light;
+            height: 15em;
+            /*padding: 4em;*/
+            /*.logo {
                 float: left;
                 width: 37em;
                 img {
                     background: @_border_light;
                 }
-            }
+            }*/
+
             .content {
                 .clear;
+                padding-left: 2em;
+                text-align: initial;
             }
             .title {
                 font-weight: 200;
-                padding: 1em 0;
-                font-size: 2em;
-            }
-            .brief {
-                padding-right: .5em;
-                font-size: .95em;
+                font-size: 5em;
             }
         }
     }

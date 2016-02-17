@@ -14,6 +14,26 @@
     margin: 0 auto;
 }
 
+._item_transition {
+    -webkit-transition: box-shadow .5s, background .5s;
+    -o-transition: box-shadow .5s, background .5s;
+    transition: box-shadow .5s, background .5s;
+    &:hover {
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(220,220,220,.4) inset, 0 1px 1px rgba(0,0,0, .05);
+    }
+}
+
+._global_hint {
+    text-align: center;
+    margin-bottom: 2em;
+    line-height: 5.5rem;
+    font-size: .9rem;
+    color: @_gray;
+    border-bottom: 1px solid @_border_light;
+    background: @_background;
+}
+
 @import url('index.less');
 @import url('turbo.less');
 @import url('project.less');

@@ -215,6 +215,13 @@ img {
 .table {
   display: table;
   width: 100%;
+  height: 100%;
+}
+.table.middle {
+  text-align: center;
+}
+.table.middle .cell {
+  vertical-align: middle;
 }
 .table .row {
   display: table-row;
@@ -343,10 +350,13 @@ pre {
   border: 1px solid #222;
   color: #222 !important;
   letter-spacing: 0.05em;
-  line-height: 1em;
+  line-height: 2.5em;
+  font-size: 1rem;
   font-weight: 200;
-  padding: .5em 1em;
+  padding: 0 2em;
   display: inline-block;
+  height: 2.5em;
+  border-radius: 2.5em;
 }
 .btn:hover {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
@@ -359,11 +369,17 @@ pre {
   border: 1px solid #222;
   color: #222 !important;
   letter-spacing: 0.05em;
-  line-height: 1em;
+  line-height: 2.5em;
+  font-size: 1rem;
   font-weight: 200;
-  padding: .5em 1em;
+  padding: 0 2em;
   display: inline-block;
-  padding: 1em 3em;
+  height: 2.5em;
+  border-radius: 2.5em;
+  border-radius: 2em;
+  padding: 0 3em;
+  line-height: 3em;
+  height: 3em;
 }
 .btn-chief:hover {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
@@ -378,6 +394,24 @@ pre {
 .container {
   width: 65%;
   margin: 0 auto;
+}
+._item_transition {
+  -webkit-transition: box-shadow 0.5s, background 0.5s;
+  -o-transition: box-shadow 0.5s, background 0.5s;
+  transition: box-shadow 0.5s, background 0.5s;
+}
+._item_transition:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(220, 220, 220, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+._global_hint {
+  text-align: center;
+  margin-bottom: 2em;
+  line-height: 5.5rem;
+  font-size: .9rem;
+  color: #666666;
+  border-bottom: 1px solid #e8e8e8;
+  background: #f4f4f5;
 }
 /* index page */
 body.home main > article {
@@ -423,7 +457,7 @@ body.home .open-source,
 body.home .product {
   overflow: auto;
   zoom: 1;
-  padding: 3em;
+  padding: 3em 0;
 }
 body.home .open-source > .list,
 body.home .product > .list {
@@ -433,26 +467,42 @@ body.home .product > .list {
 }
 body.home .open-source > .list .item,
 body.home .product > .list .item {
+  -webkit-transition: box-shadow 0.5s, background 0.5s;
+  -o-transition: box-shadow 0.5s, background 0.5s;
+  transition: box-shadow 0.5s, background 0.5s;
   font-size: .98em;
   color: #333;
   position: relative;
-  background: #f4f4f5;
-  border: 1px solid #e8e8e8;
-  padding: 3.5em 5em 2em;
-  margin-top: 8em;
+  margin-bottom: 1em;
+  height: 18em;
 }
-body.home .open-source > .list .item .logo,
-body.home .product > .list .item .logo {
-  position: absolute;
-  top: -6em;
+body.home .open-source > .list .item:hover,
+body.home .product > .list .item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(220, 220, 220, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 body.home .open-source > .list .item .title,
 body.home .product > .list .item .title {
+  font-size: 2.5rem;
   font-weight: 200;
+  text-align: left;
+}
+body.home .open-source > .list .item .table,
+body.home .product > .list .item .table {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+}
+body.home .open-source > .list .item-info,
+body.home .product > .list .item-info {
+  text-align: left;
+  width: 70%;
+  padding: 0 4em;
+  border-right: 1px solid #e8e8e8;
+  background-color: #f4f4f5;
 }
 body.home .open-source > .list .item .content,
 body.home .product > .list .item .content {
-  padding: 0 5em 3em;
+  font-size: .85rem;
 }
 body.home .open-source > .list .item .content ul,
 body.home .product > .list .item .content ul {
@@ -463,6 +513,9 @@ body.home .open-source > .list .item .content ul li,
 body.home .product > .list .item .content ul li {
   list-style-type: disc;
 }
+body.home .open-source > .list {
+  margin-top: 2em;
+}
 body.home .open-source > .list .item {
   display: none;
 }
@@ -472,7 +525,7 @@ body.home .open-source > .list .slick-slide {
 body.home .open-source > .list .pre-arr,
 body.home .open-source > .list .next-arr {
   position: absolute;
-  top: 140px;
+  top: 1rem;
 }
 body.home .open-source > .list .pre-arr {
   right: -100px;
@@ -480,8 +533,75 @@ body.home .open-source > .list .pre-arr {
 body.home .open-source > .list .next-arr {
   left: -100px;
 }
+body.home .open-source > .list .slick-dots {
+  text-align: center;
+}
+body.home .open-source > .list .slick-dots > li {
+  display: inline-block;
+}
+body.home .open-source > .list .slick-dots > li.slick-active > button:before {
+  opacity: .75;
+  color: #333;
+}
+body.home .open-source > .list .slick-dots > li > button {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+body.home .open-source > .list .slick-dots > li > button:before {
+  font-family: slick;
+  font-size: 24px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
 body.home .product > .list > .item {
+  position: relative;
   margin-top: 2em;
+  border: 1px solid #e8e8e8;
+  background-color: #f4f4f5;
+  min-height: 18em;
+  padding: 4em;
+  -webkit-transition: box-shadow 0.5s, background 0.5s;
+  -o-transition: box-shadow 0.5s, background 0.5s;
+  transition: box-shadow 0.5s, background 0.5s;
+}
+body.home .product > .list > .item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  border: inherit;
+  display: block;
+  -webkit-transform: rotate(-1.5deg) translate(-2px, 1px);
+  -ms-transform: rotate(-1.5deg) translate(-2px, 1px);
+  -o-transform: rotate(-1.5deg) translate(-2px, 1px);
+  transform: rotate(-1.5deg) translate(-2px, 1px);
+}
+body.home .product > .list > .item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(220, 220, 220, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 @media screen and (max-width: 960px) {
   body.home .screen {
@@ -545,6 +665,7 @@ body.home .product > .list > .item {
 .turbo .summary .content {
   overflow: auto;
   zoom: 1;
+  font-size: .9rem;
   padding: 1em;
 }
 .turbo .summary .content .intro {
@@ -624,15 +745,13 @@ body.home .product > .list > .item {
   }
 }
 body.project .main-intro {
-  padding: 3em 1em;
   text-align: center;
+  margin-bottom: 2em;
+  line-height: 5.5rem;
+  font-size: .9rem;
   color: #666666;
   border-bottom: 1px solid #e8e8e8;
   background: #f4f4f5;
-  margin-bottom: 2em;
-}
-body.project .main-list {
-  padding: 0 5em;
 }
 body.project .main-list > .item {
   overflow: auto;
@@ -678,37 +797,48 @@ body.project .main-list > .item .content {
   padding: 3em;
 }
 body.product .main-intro {
-  padding: 3em 1em;
   text-align: center;
+  margin-bottom: 2em;
+  line-height: 5.5rem;
+  font-size: .9rem;
   color: #666666;
   border-bottom: 1px solid #e8e8e8;
   background: #f4f4f5;
-  margin-bottom: 2em;
 }
 body.product .main-list {
   overflow: auto;
   zoom: 1;
   padding-top: 2em;
 }
-body.product .main-list .item .logo {
-  float: left;
-  width: 37em;
+body.product .main-list .item {
+  -webkit-transition: box-shadow 0.5s, background 0.5s;
+  -o-transition: box-shadow 0.5s, background 0.5s;
+  transition: box-shadow 0.5s, background 0.5s;
+  background-color: #f4f4f5;
+  border: 1px solid #e8e8e8;
+  height: 15em;
+  /*padding: 4em;*/
+  /*.logo {
+                float: left;
+                width: 37em;
+                img {
+                    background: @_border_light;
+                }
+            }*/
 }
-body.product .main-list .item .logo img {
-  background: #e8e8e8;
+body.product .main-list .item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(220, 220, 220, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 body.product .main-list .item .content {
   overflow: auto;
   zoom: 1;
+  padding-left: 2em;
+  text-align: initial;
 }
 body.product .main-list .item .title {
   font-weight: 200;
-  padding: 1em 0;
-  font-size: 2em;
-}
-body.product .main-list .item .brief {
-  padding-right: .5em;
-  font-size: .95em;
+  font-size: 5em;
 }
 nav.main {
   overflow: auto;
