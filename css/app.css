@@ -495,6 +495,7 @@ body.home .product > .list .item {
   position: relative;
   margin-bottom: 1em;
   height: 18em;
+  padding: 0 1px;
 }
 body.home .open-source > .list .item:hover,
 body.home .product > .list .item:hover {
