@@ -391,6 +391,9 @@ pre {
 .btn-chief + .btn-chief {
   margin-left: .5em;
 }
+body {
+  min-width: 1200px;
+}
 /*page*/
 .container {
   width: 65%;
