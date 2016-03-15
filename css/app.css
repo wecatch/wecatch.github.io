@@ -918,6 +918,7 @@ nav.main .container .site-back {
 nav.main .container .site-nav {
   overflow: auto;
   zoom: 1;
+  overflow: hidden;
   float: right;
   line-height: 5.5em;
   height: 5em;
