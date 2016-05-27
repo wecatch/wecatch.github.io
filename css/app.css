@@ -922,13 +922,13 @@ nav.main .container .site-nav {
   float: right;
   line-height: 5.5em;
   height: 5em;
+  text-align: center;
 }
 nav.main .container .site-nav > li {
   height: 100%;
   float: left;
-  width: 5em;
+  padding: 0 1.5em;
   text-align: center;
-  margin-right: .5em;
 }
 nav.main .container .site-nav > li.active {
   border-bottom: 2px solid #f50;
